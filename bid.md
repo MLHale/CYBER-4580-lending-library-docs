@@ -1,12 +1,12 @@
 Project Bid
 
 Names:	Nick Volenec
-				Firstname Lastname
+				Tareq Alomar
 				Firstname Lastname
 				Firstname Lastname
 
 Email addresses:		email@unomaha.edu
-email@unomaha.edu
+talomar@unomaha.edu
 email@unomaha.edu
 email@unomaha.edu
 
