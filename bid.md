@@ -1,14 +1,14 @@
 Project Bid
 
-Names:	Nick Volenec
-				Tareq Alomar
-				Cody Barrett
-				Jacob Levy
+Names:				Nick Volenec  
+				Tareq Alomar  
+				Cody Barrett  
+				Jacob Levy  
 
-Email addresses:		email@unomaha.edu
-talomar@unomaha.edu
-codybarrett@unomaha.edu
-jlevy@unomaha.edu
+Email addresses:		nvolenec@unomaha.edu  
+				talomar@unomaha.edu  
+				codybarrett@unomaha.edu  
+				jlevy@unomaha.edu  
 
 
 University:			University of Nebraska-Omaha
