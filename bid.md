@@ -15,11 +15,11 @@ University:			University of Nebraska-Omaha
 
 Faculty Advisor:		Dr. Matt Hale
 
-Project:			Project Name 
+Project:			UNO Tech Lending Library
 
-Project Agency (optional):	Project External customer or federal agency (if one exists)
+Project Agency (optional):	Project External customer or federal agency (if one exists) Dr. Hale
 
-Technical Director / External Customer: 	Name of representative (if one exists)	
+Technical Director / External Customer: 	Name of representative (if one exists)	Dr. Hale
 
 Reason for wanting this project:
 
@@ -35,5 +35,5 @@ Qualifications:
 •	(short bio and overview of qualifications for first team member)
 •	(short bio and overview of qualifications for second team member)
 •	(short bio and overview of qualifications for third team member)
-•	(short bio and overview of qualifications for fourth team member)
+•	Jacob Levy: Senior in Cybersecurity, Experience programming in Java, C, Python, and Oracle SQL. Also good at organizing information.
 
