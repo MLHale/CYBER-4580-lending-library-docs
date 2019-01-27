@@ -17,13 +17,13 @@ Faculty Advisor:		Dr. Matt Hale
 
 Project:			UNO Tech Lending Library
 
-Project Agency (optional):	Project External customer or federal agency (if one exists) Dr. Hale
+Project Agency (optional):	Dr. Hale
 
-Technical Director / External Customer: 	Name of representative (if one exists)	Dr. Hale
+Technical Director / External Customer: 	Dr. Hale
 
 Reason for wanting this project:
 
-(1-3 paragraphs about why the team is interested in this project. Focus on the interesting aspects of the project and how the team matches well to the project area)
+University of Nebraska at Omaha has many resources for its community to use. For example, teachers can be able to use these resources by requesting the item via the app. On the other hand, UNO faculty and staff will be able to monitor and track any item has been checked out by an individual. 
 
 Project Scope:
 
@@ -33,7 +33,6 @@ Qualifications:
 
 (high level overview of team structure)
 •	(short bio and overview of qualifications for first team member)
-•	(short bio and overview of qualifications for second team member)
+•	Tareq Alomar is an undergraduate in Cybersecurity at University of Nebraska at Omaha. He has experience in Java and SQL languages. Also, he has some experience in designing applications.
 •	(short bio and overview of qualifications for third team member)
 •	Jacob Levy: Senior in Cybersecurity, Experience programming in Java, C, Python, and Oracle SQL. Also good at organizing information.
-
