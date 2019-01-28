@@ -32,7 +32,7 @@ Project Scope:
 Qualifications:
 
 (high level overview of team structure)
-•	(short bio and overview of qualifications for first team member)
+•	Nick Volenec: Masters student in Cybersecurity program, 13 years industry experience in software development.
 •	Tareq Alomar is an undergraduate in Cybersecurity at University of Nebraska at Omaha. He has experience in Java and SQL languages. Also, he has some experience in designing applications.
 •	Cody Barrett: Senior in Cybersecurity, experience in Java and SQL languages, and team management.
 •	Jacob Levy: Senior in Cybersecurity, Experience programming in Java, C, Python, and Oracle SQL. Also good at organizing information.
