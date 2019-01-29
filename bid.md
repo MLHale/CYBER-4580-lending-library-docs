@@ -31,7 +31,7 @@ The system will have two seperate interfaces, a client interface and and adminit
 
 We are currently evaluating platforms for the system.  Our tentative plans are for a web-based system, where the system will be coded using a combination of CSS, javascript, a MySQL database, and a yet to be determinted server-side language.  Development work will be divided between the presentation layer (CSS and javascript) and server-side (logical code and database).
 
-Qualifications:
+Qualifications:  
 •	Nick Volenec: Masters student in Cybersecurity program, 13 years industry experience in software development.  
 •	Tareq Alomar is an undergraduate in Cybersecurity at University of Nebraska at Omaha. He has experience in Java and SQL languages. Also, he has some experience in designing applications.  
 •	Cody Barrett: Senior in Cybersecurity, experience in Java and SQL languages, and team management.  
