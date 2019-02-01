@@ -1,0 +1,48 @@
+﻿General Notes:
+* First, we are using Ember, Django, and PostgreSQL
+* Linux box for hosting, other options should be looked at, we have options
+* We NEED the Database schema for the project
+* Potentially come up with users stories
+
+Project proposal Notes:
+* Executive summary - similar to the bid but needs to be expanded
+   * Why problematic?
+      * It is difficult to deal with requests from equipment, including tracking, and difficult for end users to know if everything is good on their end.
+      * Descriptors and packages. (bonus)
+   * Goals and objectives:
+      * Implement an inventory tracking system (database)
+      * Implement a user interface that is friendly to end-users
+      * Implement an order tracking system
+   * Merit? - (good place for stories)
+      * Societal - more tech-savvy individuals
+      * Otherwise answers the rest of the question
+* Timeline - Gannt chart - tasks with expected time (after next week)
+* Risk list 
+   * People get sick
+   * Lack of technical proficiency(in too deep)
+   * Inadequate documentation for systems to be used
+   * Hardware failures
+   * Act of god (risks outside of our control)
+   * Outside interference?
+* Resources needed (ask for more info from Dr. Hale)
+   * Server space
+   * Barcode scanner?
+   * Label Maker?
+   * Web hosting?
+   * Investigate the following
+      * Ember.js
+      * Django
+      * postgreSQL
+* Methodology
+   * Literature review - research, keywords, what’s been done, etc.
+   * Technical plan - what methods are we going to use, in-depth and specifics of the executive summary, scope
+      * Best practices - SQL, HTML, javascript, python, etc
+* Sprint plan (after next week)
+
+
+Questions for Dr. Hale:
+* Should we go for a domain or a server or no?
+* Shipped or no?
+* Do we need to worry about barcode scanners or anything?
+   * If so, how far do you want it to go?
+* How is this different from a regular library?
