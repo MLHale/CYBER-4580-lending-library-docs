@@ -1,0 +1,17 @@
+User Stories: (on User's side)
+  Title: Be able to request an order from UNO Tech Lending Library.
+Description:
+  As a teacher in Omaha area, I need be able to request a package (via app), So that I can use UNO's resources.
+Acceptance Criteria:
+  - A list of items pop up when I click request.
+  - When I select an item, I would be able to selcet the quantity.
+  - When I select the quantity, I should be able to find the item(s) in my cart to check out.
+  
+Use Case: request an order
+  - The use case begins when the user clicks "request"
+  - The system responds by displaying item.
+  - The user chooses the item & its quantity.
+  - The system responds if the item is avaliable to lend them, put it into user's cart.
+  -[Alt1] The user is ready to checkout.
+  -[Alt2] The user wants to continue to order more items.
+  - The user case ends when the user confirms to checkout all the requests. 
