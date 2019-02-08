@@ -15,3 +15,14 @@ Use Case: request an order
   -[Alt1] The user is ready to checkout.
   -[Alt2] The user wants to continue to order more items.
   - The user case ends when the user confirms to checkout all the requests. 
+  
+  
+  User Stories: (on UNO's staff side)
+    Title: Be able to track an order that has been checked out by a teacher.
+  Description:
+    As a UNO faculity and staff, I need be able to track a package (via app), so I can keep monitor UNO's resources.
+  Acceptance criteria:
+    -Pending?
+    -arrived?
+    -search by an individual order to track? or see all the orders at once to track?
+    -limitation time for lending?
