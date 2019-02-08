@@ -9,4 +9,8 @@ Our goals/objectives are as follows:
 
 * To allow lenders to track inventory.
 
+A stretch goal/objective is:
+
+* To allow a new user to register via the web app.
+
 Successful completion of this project will allow instructors to more easily lend out and borrow products. This will result in more use of the library by its intended users and thus more effective. 
