@@ -1,0 +1,46 @@
+ember, django, docker
+ if we can-approval step for access
+
+django -> json api
+jsonapi.org
+
+docker file and docker composed file
+
+builds directory - 2 sub modules
+one points to backend dirrectory
+one points to frontend directory
+	ember.js - item interface
+
+
+we should work on the cart interface
+multiple instances
+who has what checked out and who is requesting them
+
+email for renewal of requst but otherwise do not worry much about system.
+
+present all items we have, be ale to combine them into a group and checkout procedure
+
+create a request queue and be able to remove from queue when ready
+
+interface to return items. 
+
+
+focus on cart and movement through the lifecycle, item management,module interface - premade packages of items (needs to be scaleable)
+
+item tracking - through profiles as well.
+
+need an authentication system. - stretch goals
+
+
+identify stretch goals and what we want to get done
+
+proposal - design documentation
+
+docker
+
+Methodology
+
+c4model.com - try to get level 3 diagrams for the proposal
+
+generate a couple of mockup diagrams as well
+
