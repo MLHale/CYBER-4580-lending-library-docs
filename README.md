@@ -17,3 +17,5 @@ Our stretch goals/objectives are:
 * To allow borrowers to place all items needed for a module into their "cart" in one click.
 
 Successful completion of this project will allow instructors to more easily lend out and borrow products. This will result in more use of the library by its intended users and thus more effective education practices for the instructors utilizing the system. 
+
+![Our Gannt Chart] (https://github.com/nvolenec-uno/CYBR-4580-makerT1/Proposal%20Stuff/Gannt%20Chart.jpg)
