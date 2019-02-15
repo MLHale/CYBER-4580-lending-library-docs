@@ -1,5 +1,5 @@
 LITERATURE REVIEW
-Keywords: Django Security, Ember.js Security, postgreSQL security,
+Keywords: Django Security, Ember.js Security, postgreSQL security, tech lending library, Web App Security
 
 
 TECHNICAL PLAN
