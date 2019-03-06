@@ -18,6 +18,7 @@ from django.core.validators import *
 class UserProfile(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	org = models.ForeignKey(Organization, blank=False)
+	# TODO: add missing roles
 
 class Organization(models.Model):
 	name = models.CharField(max_length=1000, blank=False)
