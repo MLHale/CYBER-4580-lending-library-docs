@@ -15,10 +15,11 @@ from rest_framework_json_api import serializers
 from django.core.validators import *
 
 # Note: the OneToOneField here ‘inherits’ the User model from django.contrib.auth
+# 	the django.contrib.auth.models.User can handel roles with its is_staff, is_admin, user_permissions fields
+#	user_permissions is a ManyToMany relationship with django.contrib.auth.models.Permission 
 class UserProfile(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	org = models.ForeignKey(Organization, blank=False)
-	# TODO: add missing roles
 
 class Organization(models.Model):
 	name = models.CharField(max_length=1000, blank=False)
@@ -47,9 +48,9 @@ class Order(models.Model):
 
 	
 	
-class OrderItemsRel(models.Model):
-	order = models.ForeignKey(Order, on_delete=models.CASCADE, blank=False)
-	item = models.ForeignKey(Item, related_names='items', blank=False)
+# class OrderItemsRel(models.Model):
+#	order = models.ForeignKey(Order, on_delete=models.CASCADE, blank=False)
+#	item = models.ForeignKey(Item, related_names='items', blank=False)
 
 
 class Item(models.Model):
@@ -64,6 +65,7 @@ class Item(models.Model):
 	)
 	status = models.CharField(max_length=100, blank=False) choices=ITEM_STATUS_CHOICES
 	owner = models.ForeignKey(User, blank=False)
+	order = models.ManyToManyField(Order)
 	checkedoutto = models.ForeignKey(User)
 	
 class ItemType(models.Model):
@@ -73,11 +75,16 @@ class ItemType(models.Model):
 class Package(models.Model):
 	name = models.CharField(max_length=200, blank=False)
 	description = models.TextField(max_length=1000, blank=False)
+	items = models.ManyToManyField( 
+		ItemType,
+		through='PackageItemRel',
+		through_fields=('package', 'itemtype'),
+	)
 	
 	
-classPackageItemRel(models.Model):
+class PackageItemRel(models.Model):
 	package = models.ForeignKey(Package, blank=False)
-	item = models.ForeignKey(Item, blank=False)
+	itemtype = models.ForeignKey(Item, blank=False)
 	quantity = models.IntegerField(blank=False)
 
 
