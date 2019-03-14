@@ -14,80 +14,104 @@ from django.contrib.auth.models import User
 from rest_framework_json_api import serializers
 from django.core.validators import *
 
-# Note: the OneToOneField here ‘inherits’ the User model from django.contrib.auth
-# 	the django.contrib.auth.models.User can handel roles with its is_staff, is_admin, user_permissions fields
-#	user_permissions is a ManyToMany relationship with django.contrib.auth.models.Permission 
-class UserProfile(models.Model):
-	user = models.OneToOneField(User, on_delete=models.CASCADE)
-	org = models.ForeignKey(Organization, blank=False)
+class Checkout(models.Model):
+    #REGEX for phone number validation
+    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$', message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
 
-class Organization(models.Model):
-	name = models.CharField(max_length=1000, blank=False)
-	address1 = models.CharField(max_length=1000, blank=False)
-	address2 = models.CharField(max_length=1000, blank=False)
-	city = models.CharField(max_length=100, blank=False)
-	state = models.CharField(max_length=2, blank=False)
-	zip = models.CharField(max_length=20, blank=False)
-	
-class Order(models.Model):
-	user = models.ForeignKey(User, blank=False)
-	ORDER_STATUS_CHOICES = (
-		(CART, 'In Cart'),
-		(ORDERED,'Ordered'),
-		(INFUL, 'In Fulfillment'),
-		(FUL, 'Fulfilled'),
-		(SHIPPED, 'Shipped'),
-		(RECIEVED, 'Return Recieved'),
-		(RETURNED, 'Returned'),
-	)
-	status = models.CharField(max_length=100, blank=False) choices=ORDER_STATUS_CHOICES
-	createdon = models.DateTimeField(null = True, blank = True)
-	fulfilledon = models.DateField(null = True, blank = True)
-	returnedon = models.DateField(null = True, blank = True)
-	missingparts = models.TextField(max_length=1000, blank=True)
+    firstname = models.CharField(max_length=1000, blank=False)
+    lastname = models.CharField(max_length=1000, blank=False)
+    address = models.CharField(max_length=254, blank = False)
+    phonenumber = models.CharField(validators=[phone_regex], max_length=17, blank=False)
+    numberofstudents = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(99)], blank=False)
+    createdon = models.DateTimeField(null = True, blank = True)
+    fulfilledon = models.DateField(null = True, blank = True)
+    returnedon = models.DateField(null = True, blank = True)
+    missingparts = models.TextField(max_length=1000, blank=True)
 
-	
-	
-# class OrderItemsRel(models.Model):
-#	order = models.ForeignKey(Order, on_delete=models.CASCADE, blank=False)
-#	item = models.ForeignKey(Item, related_names='items', blank=False)
+    def __str__(self):
+        return str(self.lastname) + ', ' + str(self.firstname)
+
+    class JSONAPIMeta:
+        resource_name = "checkouts"
 
 
 class Item(models.Model):
-	type = models.ForeignKey(ItemType, blank=False)
-	barcode = models.CharField(max_length=100, blank=True)
-	ITEM_STATUS_CHOICES = (
-		(AVAIL, 'Available'),
-		(CO,'Checked Out'),
-		(BROKE, 'Broken'),
-		(MISSING, 'MISSING'),
-		(NOTRET, 'Not Returned'),
-	)
-	status = models.CharField(max_length=100, blank=False) choices=ITEM_STATUS_CHOICES
-	owner = models.ForeignKey(User, blank=False)
-	order = models.ManyToManyField(Order)
-	checkedoutto = models.ForeignKey(User)
-	
-class ItemType(models.Model):
-	name = models.CharField(max_length=200, blank=False)
-	description = models.TextField(max_length=1000, blank=False)
+    partname = models.CharField(max_length=100, blank=False)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='items', blank=False)
+    description = models.TextField(max_length=1000, blank=False)
+    checkedoutto = models.ForeignKey(Checkout, on_delete=models.CASCADE, related_name='items', null = True, blank=True)
 
-class Package(models.Model):
-	name = models.CharField(max_length=200, blank=False)
-	description = models.TextField(max_length=1000, blank=False)
-	items = models.ManyToManyField( 
-		ItemType,
-		through='PackageItemRel',
-		through_fields=('package', 'itemtype'),
-	)
-	
-	
-class PackageItemRel(models.Model):
-	package = models.ForeignKey(Package, blank=False)
-	itemtype = models.ForeignKey(Item, blank=False)
-	quantity = models.IntegerField(blank=False)
+    def __str__(self):
+        return str(self.partname)
+
+    class JSONAPIMeta:
+        resource_name = "items"
+
+class Category(models.Model):
+    categoryname = models.CharField(max_length=100, blank=False)
+    description = models.TextField(max_length=1000, blank=False)
+
+    def __str__(self):
+        return str(self.categoryname)
+
+    class JSONAPIMeta:
+        resource_name = "categories"
+
+class Profile(models.Model):
+    UNL = 'unl'
+    UNO = 'uno'
+    UNMC = 'unmc'
+    UNK = 'unk'
+    ORG_OTHER = 'other'
+    ORG_CHOICES = (
+        (UNL, 'University of Nebraska - Lincoln'),
+        (UNO, 'University of Nebraska - Omaha'),
+        (UNMC, 'University of Nebraska Medical Center'),
+        (UNK, 'University of Nebraska - Kearney'),
+        (ORG_OTHER, 'Other'),
+    )
+
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    org = models.CharField(max_length=30, choices=ORG_CHOICES, default=UNO)
+    college = models.CharField(max_length=1000, blank=True)
+    dept = models.CharField(max_length=1000, blank=True)
+    otherdetails = models.CharField(max_length=1000, blank=True)
+    areasofinterest = models.ManyToManyField('Areaofinterest', related_name='profiles', blank=True)
+
+    def __str__(self):
+        return str(self.user.username)
 
 
+class Award(models.Model):
+    title = models.CharField(max_length=1000, blank=False)
+    description = models.TextField(blank=True)
+    awardlink = models.URLField(max_length=1000, blank=False)
+    sponsororg = models.CharField(max_length=1000, blank=True)
+
+    recurring = models.BooleanField(default=False)
+    nomreq = models.BooleanField(default=False)
+    recurinterval = models.CharField(max_length=1000, blank=True)
+    opendate = models.DateTimeField()
+    nomdeadline = models.DateTimeField()
+    submdeadline = models.DateTimeField()
+
+    additionalinfo = models.TextField(blank=True)
+
+    previousapplicants = models.IntegerField(default=0, blank=False)
+    createdon = models.DateTimeField(auto_now_add=True)
+
+    # Relationships
+    source = models.ForeignKey('Source', related_name='awards', on_delete=models.PROTECT, blank=True)
+    stemfields = models.ManyToManyField('Stemfield', related_name='awards', blank=True)
+    applicanttypes = models.ManyToManyField('Applicanttype', related_name='awards', blank=True)
+    awardpurposes = models.ManyToManyField('Awardpurpose', related_name='awards', blank=True)
+    createdby = models.ForeignKey('Profile', related_name='awards', on_delete=models.PROTECT)
+
+    def __str__(self):
+        return str(self.title)
+
+    class JSONAPIMeta:
+        resource_name = "awards"
 
 class Source(models.Model):
     # Award Source choices
@@ -255,4 +279,3 @@ class AwardSerializer(serializers.ModelSerializer):
 
     class JSONAPIMeta:
 		included_resources = ['createdby','applicanttypes', 'awardpurposes','stemfields','source']
-
