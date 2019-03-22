@@ -3,11 +3,9 @@
 We have Worked on creating and implementing a database model that can be used for the Lending Library, as well as work on frontend functionality including logins, the cart system.
 
 ## Outcomes
-(brief overview of outcomes - what did you achieve?)
+Implemented the Database Schema
 
-also list them out like this:
-* outcome 1
-* outcome 2
+* Database Schema Implemented
 
 ## Hinderances
 The amount of technical knowledge the team has about the programs and processes being used has hindered our ability to implement parts of our project in a timely fashion.
