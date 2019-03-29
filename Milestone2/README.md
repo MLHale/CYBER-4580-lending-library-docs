@@ -33,6 +33,6 @@ Our team lacks experience with the Ember.js and Django frameworks. Useful tutori
 ![Ordering Process Flowchart](https://github.com/nvolenec-uno/CYBER-4580-makerT1/blob/master/Milestone2/Ordering%20Process%20Flowchart.png)
 
 
-### C4 Diagram
+### C4 level 4 Diagram
 
-![C4 Diagram](https://github.com/nvolenec-uno/CYBER-4580-makerT1/blob/master/Milestone2/level4.png)
+![C4 level 4 Diagram](https://github.com/nvolenec-uno/CYBER-4580-makerT1/blob/master/Milestone2/level4.png)
