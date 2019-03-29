@@ -23,9 +23,16 @@ Our team lacks experience with the Ember.js and Django frameworks. Useful tutori
 | Hardware Failure                          |    5   |      2     | Non-issue so far.                                 |
 | Act of God                                |    8   |      1     | Non-issue so far.                                 |
 
+### Lending Library Schema
 
 ![Lending Library Schema](https://github.com/nvolenec-uno/CYBER-4580-makerT1/blob/master/Milestone2/Lending%20Library%20Schema%20v2.png)
 
+
+### Ordering Process Flowchart
+
 ![Ordering Process Flowchart](https://github.com/nvolenec-uno/CYBER-4580-makerT1/blob/master/Milestone2/Ordering%20Process%20Flowchart.png)
+
+
+### C4 Diagram
 
 ![C4 Diagram](https://github.com/nvolenec-uno/CYBER-4580-makerT1/blob/master/Milestone2/level4.png)
