@@ -20,9 +20,9 @@ This guide assumes you are working in a Windows 10 environment.
     * The checkout and pull commands should be run from both the `lending-library-frontend` and `lending-library-backend` folders.
     * To create your own branch off of ours:
       * `git checkout -b <your new branch name here>`
-  * Change into the backend directory if you aren't already there.
+  * Change into the backend or dev directory if you aren't already there.
     * `docker-compose build` will create the Django database
-  * Change into the frontend or dev directory
+  * Change into the frontend directory
     * `ember build -w -o ../lending-library-backend/static/ember`
       * This will likely fail the first time, and ask you to run additional commands such as `npm install` or `audit`, run the recommended commands and then run the `ember build` command again.
 * Open VirtualBox
