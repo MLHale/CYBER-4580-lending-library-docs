@@ -1,40 +1,19 @@
-# Progress Report (insert date here)
+# Progress Report 5/2/2019
 ## Overview
-(insert brief overview of efforts made)
+For milestone 3, we have enabled communication between the frontend and backend. A user may now login to the frontend, which retrieves their unique data. Furthermore, they may populate their cart and place an order.
 
 ## Outcomes
-(brief overview of outcomes - what did you achieve?)
-
-also list them out like this:
-* outcome 1
-* outcome 2
+User may:
+* login to the website
+* place items into their cart by itemtype and quantity
+* place items into their cart by adding a package containing a group of itemtypes and respective quantities
+* remove individual itemtype-quantities from their cart
+* empty their cart
+* place an order if sufficient items exist
 
 ## Hinderances
-(insert brief discussion of challenges encountered)
-
-# Project name
-## Executive Summary
-(overview of project, reuse from milestone 1, update if scope changed)
-
-## Project Goals
-(high level project goals, reuse from milestone 1, update if scope changed)
-
-## Project Methodology
-(specific methodology followed in the project, reuse from milestone 1/2, update if scope changed)
-
-## Results / Findings
-(brief overview of outcomes - what did you achieve?, list milestone 1/2/3 outcomes, make an effort to logically collect and organize the findings)
-
-(bulleted lists can also be helpful to structure your results discussion)
-* outcome 1
-* outcome 2
-
-## Install Instructions (if applicable)
-### Requirements
-(list of any software / hardware requirements necessary to run the code/app/etc)
-
-### Installation Instructions
-(list of steps to install the product/app/code/etc)
-
-### Getting started
-(list of any steps to run the code after installation and/or manage the apps over their lifecycle)
+* Lazy-loading of Ember Store records caused difficulty when attempting to console.log() values. Usage of Ember observers is necessary to override this behavior.
+* Backend code involving models, serializers, and viewsets required considerable modifications to successfully communicate with the frontend.
+* Made mistakes regarding the use of singular and plural names for serializer includes.
+* Third-party reference examples sometimes used varied syntax.
+* Object-level permissions have proven difficult to implement
