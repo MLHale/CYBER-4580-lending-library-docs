@@ -1,6 +1,8 @@
 # Progress Report 5/2/2019
 ## Overview
-For milestone 3, we have enabled communication between the frontend and backend. A user may now login to the frontend, which retrieves their unique data. Furthermore, they may populate their cart and place an order.
+Working towards completing our objectives has produced both successes and significant challenges. After reviewing the feedback from our Milestone 2 results, we decided to commit more of our team's resources to focused tasks and more effective dissemination of work. Specifically, we had been pausing our work on the frontend deliverables in order to focus more on just the backend and at the onset of Milestone 3 this changed. The team broke apart into individual and separate focus areas: finishing the backend, working on the frontend, further documentation, and security evaluation.
+
+We now have enabled communication between the frontend and backend. A user may now login to the frontend, which retrieves their unique data. Furthermore, they may populate their cart and place an order.
 
 ## Outcomes
 User may:
