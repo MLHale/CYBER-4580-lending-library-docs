@@ -84,6 +84,7 @@ The following features would be useful for future work:
 * Allow users to see the availability of items before placing the order
 * View and update orders
 * Migrate orders to history model once completed
+
 Issues and lessons learned:
 * Ember observers must be used to override lazy-loading. Without them, console.log() provides no useful information.
 * Backend includes are useful for gathering related information in a single request.
