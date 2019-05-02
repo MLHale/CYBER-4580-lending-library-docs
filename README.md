@@ -45,7 +45,12 @@ Our focus for the second milestone, ensuring that the back end is functional as 
 
 ### Results / Findings
 #### Milestone 1
-* outcome 1
+* Created a timeline
+* Created a risk list
+* Created a technical plan
+* Created user stories
+* Created C4 diagrams
+* Deciding what resources will be used, such as Django, Ember.js, etc.
 #### Milestone 2
 * Learned the basics of the Django and Ember.js frameworks
 * Familiarized ourselves with the existing codebase provided by Dr. Hale
