@@ -4,6 +4,7 @@
 ### Executive Summary
 There is a technology lending library that teachers/instructors in the local area have access to. This is a great asset for the instructors who use it but in its current form is very difficult for both the instructors borrowing and the instructors lending. On the lending side, all the products are manually tracked and requests from borrowers have to be manually responded to. On the borrowers side, a request for a product is sent blindly, with no knowledge of whether or not the requested product will be available in the near future if at all, or whether the request was received by the right individual. 
 
+### Project Goals
 Our goals/objectives are as follows:
 
 * To automate the request process.
@@ -42,6 +43,25 @@ Our plan is to develop a system with a PostgreSQL and Django back end and an Emb
 
 Our focus for the second milestone, ensuring that the back end is functional as well as implementing several features such as creating an activity log and which user performed each action, and an initial rough front end. Our focus for the third milestone will be completing any unfinished tasks from the second milestone, creating a polished front end, and if time permits working on our stretch goals of developing an interface that will allow new users to apply for a borrower account and the ability for items to be grouped into modules.
 
+### Results / Findings
+#### Milestone 1
+* outcome 1
+#### Milestone 2
+* Learned the basics of the Django and Ember.js frameworks
+* Familiarized ourselves with the existing codebase provided by Dr. Hale
+* Created our own development environments
+* Implemented our database schema within models.py
+* Started connecting Django models to usable views for the frontend
+* Started modifying the frontend codebase for use in our application
+#### Milestone 3
+Implemented new functionality such that the user may now:
+* login to the website
+* place items into their cart by itemtype and quantity
+* place items into their cart by adding a package containing a group of itemtypes and respective quantities
+* remove individual itemtype-quantities from their cart
+* empty their cart
+* place an order if sufficient items exist
+
 ### Requirements
 |  Resource  |  Dr. Hale Needed?  |  Investigating Team Member  |  Description  |
 |------------|--------------------|-----------------------------|---------------|
@@ -58,7 +78,7 @@ Description:
   As a teacher in Omaha area, I need be able to request a package (via app), So that I can use UNO's resources.
 Acceptance Criteria:
   - A list of items pop up when I click request.
-  - When I select an item, I would be able to selcet the quantity.
+  - When I select an item, I would be able to select the quantity.
   - When I select the quantity, I should be able to find the item(s) in my cart to check out.
   
 Use Case: request an order
