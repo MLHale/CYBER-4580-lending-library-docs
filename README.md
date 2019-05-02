@@ -43,7 +43,7 @@ Our plan is to develop a system with a PostgreSQL and Django back end and an Emb
 
 Our focus for the second milestone, ensuring that the back end is functional as well as implementing several features such as creating an activity log and which user performed each action, and an initial rough front end. Our focus for the third milestone will be completing any unfinished tasks from the second milestone, creating a polished front end, and if time permits working on our stretch goals of developing an interface that will allow new users to apply for a borrower account and the ability for items to be grouped into modules.
 
-### Results / Findings
+### Results
 #### Milestone 1
 * Created a timeline
 * Created a risk list
@@ -66,6 +66,13 @@ Implemented new functionality such that the user may now:
 * remove individual itemtype-quantities from their cart
 * empty their cart
 * place an order if sufficient items exist
+
+### Findings
+The following features would be useful for future work:
+* Allow new users to register
+* Allow admin or lenders to add multiple new items to the database with an automated sequential barcode assignment
+* View and update orders
+* Migrate orders to history model once completed
 
 ### Requirements
 |  Resource  |  Dr. Hale Needed?  |  Investigating Team Member  |  Description  |
