@@ -4,16 +4,16 @@ These are the instructions to build the app for production mode. In its current 
 ## Requirements
 This app is containerized using Docker:
 * Docker (https://docs.docker.com/install/)
-* For Windows we used Docker Toolbox: https://docs.docker.com/toolbox/
+* (Windows users) Docker Toolbox: https://docs.docker.com/toolbox/
 However, the download no longer appears to be available on the docker website. It reads, "Docker Toolbox is now considered Legacy."
 
-The following is needed to build the frontend:
+Ensure the following is installed to build the frontend:
 * node
 * npm
 * bower
 * ember-cli
 
-### First Time Installing/Configuring Docker Toolbox
+### First Time Installing/Configuring Docker Toolbox (Windows users)
 * Install Docker Toolbox
 * Run the Docker Quickstart Terminal
 * Open VirtualBox after it has finished initializing
