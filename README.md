@@ -69,12 +69,12 @@ For the third milestone, we mostly focused on essential frontend functionality. 
 * Started modifying the frontend codebase for use in our application
 #### Milestone 3
 Implemented new functionality such that the user may now:
-* login to the website
-* place items into their cart by itemtype and quantity
-* place items into their cart by adding a package containing a group of itemtypes and respective quantities
-* remove individual itemtype-quantities from their cart
-* empty their cart
-* place an order if sufficient items exist
+* Login to the website
+* Place items into their cart by itemtype and quantity
+* Place items into their cart by adding a package containing a group of itemtypes and respective quantities
+* Remove individual itemtype-quantities from their cart
+* Empty their cart
+* Place an order if sufficient items exist
 
 ### Findings
 The following features would be useful for future work:
