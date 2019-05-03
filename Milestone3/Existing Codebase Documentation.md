@@ -42,10 +42,10 @@ Package | app/routes/packages.js, app/controller/packages.js, app/templates/pack
 
 
 ## Verison History
- Date | Editor | Description
+ Date | Editor | Author|Description
 ------------|--------|-------------
-5/2/2019 | Jacob Levy | Added entries for more frontend files. Finished Login, Cart, and Package, component specific files; removed to do list
-4/30/2019 | Jacob Levy | Added entries for the frontend files as well as Cart and Login components
-4/18/2019 | Jacob Levy | Added Component section and entry for the database, login component, added frontend entries: urls.py, controllers.py, 
-3/27/2019 | Jacob Levy | Added the To Do Section, and Readme and gitignore files in the backend.
-3/26/2018 | Jacob Levy | Created document. Added Title and brief document description, backend title and documentation and frontend title.
+5/2/2019 | Jacob Levy | Jacob Levy, Nick Harper | Added entries for more frontend files. Finished Login, Cart, and Package, component specific files; removed to do list
+4/30/2019 | Jacob Levy | Jacob Levy | Added entries for the frontend files as well as Cart and Login components
+4/18/2019 | Jacob Levy | Jacob Levy | Added Component section and entry for the database, login component, added frontend entries: urls.py, controllers.py 
+3/27/2019 | Jacob Levy | Jacob Levy |Added the To Do Section, and Readme and gitignore files in the backend.
+3/26/2018 | Jacob Levy | Jacob Levy | Created document. Added Title and brief document description, backend title and documentation and frontend title.
